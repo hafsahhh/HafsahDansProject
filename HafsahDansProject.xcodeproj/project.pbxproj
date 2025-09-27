@@ -6,6 +6,15 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		1A41C4882E87EE7300A977C8 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 1A41C4872E87EE7300A977C8 /* Alamofire */; };
+		1A41C48B2E87EEDD00A977C8 /* RxSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 1A41C48A2E87EEDD00A977C8 /* RxSwift */; };
+		1A41C49A2E87F03500A977C8 /* RxCocoa in Frameworks */ = {isa = PBXBuildFile; productRef = 1A41C4992E87F03500A977C8 /* RxCocoa */; };
+		1A41C49C2E87F03500A977C8 /* RxRelay in Frameworks */ = {isa = PBXBuildFile; productRef = 1A41C49B2E87F03500A977C8 /* RxRelay */; };
+		1A41C49F2E87F0AF00A977C8 /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = 1A41C49E2E87F0AF00A977C8 /* SnapKit */; };
+		1A41C4B12E87F9E600A977C8 /* RealmSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 1A41C4B02E87F9E600A977C8 /* RealmSwift */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXFileReference section */
 		1A41C4662E87ECD800A977C8 /* HafsahDansProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HafsahDansProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -36,6 +45,12 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1A41C4B12E87F9E600A977C8 /* RealmSwift in Frameworks */,
+				1A41C49A2E87F03500A977C8 /* RxCocoa in Frameworks */,
+				1A41C48B2E87EEDD00A977C8 /* RxSwift in Frameworks */,
+				1A41C49C2E87F03500A977C8 /* RxRelay in Frameworks */,
+				1A41C4882E87EE7300A977C8 /* Alamofire in Frameworks */,
+				1A41C49F2E87F0AF00A977C8 /* SnapKit in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -46,6 +61,7 @@
 			isa = PBXGroup;
 			children = (
 				1A41C4682E87ECD800A977C8 /* HafsahDansProject */,
+				1A41C4832E87EE1100A977C8 /* Frameworks */,
 				1A41C4672E87ECD800A977C8 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -56,6 +72,13 @@
 				1A41C4662E87ECD800A977C8 /* HafsahDansProject.app */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		1A41C4832E87EE1100A977C8 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -78,6 +101,12 @@
 			);
 			name = HafsahDansProject;
 			packageProductDependencies = (
+				1A41C4872E87EE7300A977C8 /* Alamofire */,
+				1A41C48A2E87EEDD00A977C8 /* RxSwift */,
+				1A41C4992E87F03500A977C8 /* RxCocoa */,
+				1A41C49B2E87F03500A977C8 /* RxRelay */,
+				1A41C49E2E87F0AF00A977C8 /* SnapKit */,
+				1A41C4B02E87F9E600A977C8 /* RealmSwift */,
 			);
 			productName = HafsahDansProject;
 			productReference = 1A41C4662E87ECD800A977C8 /* HafsahDansProject.app */;
@@ -107,6 +136,12 @@
 			);
 			mainGroup = 1A41C45D2E87ECD800A977C8;
 			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				1A41C4862E87EE7300A977C8 /* XCRemoteSwiftPackageReference "Alamofire" */,
+				1A41C4892E87EEDC00A977C8 /* XCRemoteSwiftPackageReference "RxSwift" */,
+				1A41C49D2E87F0AF00A977C8 /* XCRemoteSwiftPackageReference "SnapKit" */,
+				1A41C4AF2E87F9E600A977C8 /* XCRemoteSwiftPackageReference "realm-swift" */,
+			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = 1A41C4672E87ECD800A977C8 /* Products */;
 			projectDirPath = "";
@@ -333,6 +368,74 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		1A41C4862E87EE7300A977C8 /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/Alamofire.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.10.2;
+			};
+		};
+		1A41C4892E87EEDC00A977C8 /* XCRemoteSwiftPackageReference "RxSwift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/ReactiveX/RxSwift.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 6.9.0;
+			};
+		};
+		1A41C49D2E87F0AF00A977C8 /* XCRemoteSwiftPackageReference "SnapKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SnapKit/SnapKit.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.7.1;
+			};
+		};
+		1A41C4AF2E87F9E600A977C8 /* XCRemoteSwiftPackageReference "realm-swift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/realm/realm-swift";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		1A41C4872E87EE7300A977C8 /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 1A41C4862E87EE7300A977C8 /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
+		};
+		1A41C48A2E87EEDD00A977C8 /* RxSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 1A41C4892E87EEDC00A977C8 /* XCRemoteSwiftPackageReference "RxSwift" */;
+			productName = RxSwift;
+		};
+		1A41C4992E87F03500A977C8 /* RxCocoa */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 1A41C4892E87EEDC00A977C8 /* XCRemoteSwiftPackageReference "RxSwift" */;
+			productName = RxCocoa;
+		};
+		1A41C49B2E87F03500A977C8 /* RxRelay */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 1A41C4892E87EEDC00A977C8 /* XCRemoteSwiftPackageReference "RxSwift" */;
+			productName = RxRelay;
+		};
+		1A41C49E2E87F0AF00A977C8 /* SnapKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 1A41C49D2E87F0AF00A977C8 /* XCRemoteSwiftPackageReference "SnapKit" */;
+			productName = SnapKit;
+		};
+		1A41C4B02E87F9E600A977C8 /* RealmSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 1A41C4AF2E87F9E600A977C8 /* XCRemoteSwiftPackageReference "realm-swift" */;
+			productName = RealmSwift;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 1A41C45E2E87ECD800A977C8 /* Project object */;
 }
